@@ -1,26 +1,217 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G22010" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="GKN-Zg-Lgf">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Games View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="GamesViewController" customModule="TwitchApi" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="LGa-ep-1SE">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="HT7-Mb-Loc">
+                                    <size key="itemSize" width="150" height="200"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                                </collectionViewFlowLayout>
+                                <activityIndicatorView key="backgroundView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" id="K4H-3o-zeL">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </activityIndicatorView>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="gameCell" id="NoN-vP-SSa" customClass="GameCell" customModule="TwitchApi" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="10" width="150" height="200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9cn-7M-5jq">
+                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
+                                                    <color key="backgroundColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="9cn-7M-5jq" secondAttribute="bottom" id="0hL-dN-jR1"/>
+                                            <constraint firstAttribute="trailing" secondItem="9cn-7M-5jq" secondAttribute="trailing" id="2xe-an-bnY"/>
+                                            <constraint firstItem="9cn-7M-5jq" firstAttribute="top" secondItem="NoN-vP-SSa" secondAttribute="top" id="RM3-vu-JGa"/>
+                                            <constraint firstItem="9cn-7M-5jq" firstAttribute="leading" secondItem="NoN-vP-SSa" secondAttribute="leading" id="TNr-2R-amk"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="gameImageView" destination="9cn-7M-5jq" id="Crz-UO-qDH"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="LGa-ep-1SE" secondAttribute="trailing" id="FiJ-qY-kzg"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="LGa-ep-1SE" secondAttribute="bottom" id="Xiz-hc-m6C"/>
+                            <constraint firstItem="LGa-ep-1SE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="k44-TK-bJi"/>
+                            <constraint firstItem="LGa-ep-1SE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="rbK-G2-4cK"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="sxi-B2-Wsn"/>
+                    <connections>
+                        <outlet property="gamesCollectionView" destination="LGa-ep-1SE" id="OBe-hM-yyy"/>
+                        <outlet property="loadingIndicator" destination="K4H-3o-zeL" id="D3i-BR-o1X"/>
+                        <segue destination="r1L-Kc-E5l" kind="show" identifier="streamShowVC" id="97j-vP-ijS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1076" y="138.98050974512745"/>
+        </scene>
+        <!--Streams View Controller-->
+        <scene sceneID="Ze3-Nv-I5S">
+            <objects>
+                <viewController id="r1L-Kc-E5l" customClass="StreamsViewController" customModule="TwitchApi" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uW0-bs-cgW"/>
+                        <viewControllerLayoutGuide type="bottom" id="vKo-5z-Gpi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Cbv-Fk-2is">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="v1O-ce-YBt">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="streamCell" rowHeight="200" id="X1c-0Z-ni1" customClass="StreamCell" customModule="TwitchApi" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="200"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="X1c-0Z-ni1" id="dlB-Zj-yWv">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QSd-7d-hKc">
+                                                    <rect key="frame" x="8" y="8" width="359" height="189"/>
+                                                    <color key="backgroundColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="GW2-Xw-hXf">
+                                                    <rect key="frame" x="16" y="127" width="287" height="56.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Broadcaster" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sBD-Pi-Zag">
+                                                            <rect key="frame" x="0.0" y="0.0" width="287" height="20"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stream Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wZK-Ez-zfM">
+                                                            <rect key="frame" x="0.0" y="20" width="287" height="20"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Viewers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7pW-Kf-rqB">
+                                                            <rect key="frame" x="0.0" y="40" width="287" height="16.5"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="QSd-7d-hKc" firstAttribute="leading" secondItem="dlB-Zj-yWv" secondAttribute="leading" constant="8" id="4Cv-0a-h3X"/>
+                                                <constraint firstItem="GW2-Xw-hXf" firstAttribute="leading" secondItem="dlB-Zj-yWv" secondAttribute="leadingMargin" constant="8" id="4gT-F8-vE4"/>
+                                                <constraint firstItem="GW2-Xw-hXf" firstAttribute="height" secondItem="QSd-7d-hKc" secondAttribute="height" multiplier="0.3" id="5ZZ-rH-8PD"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="GW2-Xw-hXf" secondAttribute="bottom" constant="8" id="Fgv-dU-xFB"/>
+                                                <constraint firstAttribute="trailing" secondItem="QSd-7d-hKc" secondAttribute="trailing" constant="8" id="apf-OP-HF6"/>
+                                                <constraint firstItem="QSd-7d-hKc" firstAttribute="top" secondItem="dlB-Zj-yWv" secondAttribute="top" constant="8" id="diy-cp-t5K"/>
+                                                <constraint firstAttribute="bottom" secondItem="QSd-7d-hKc" secondAttribute="bottom" constant="2" id="nzc-oY-2Ug"/>
+                                                <constraint firstItem="GW2-Xw-hXf" firstAttribute="width" secondItem="QSd-7d-hKc" secondAttribute="width" multiplier="0.8" id="z9q-qY-fhj"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="broadcasterName" destination="sBD-Pi-Zag" id="PCy-oR-E39"/>
+                                            <outlet property="steamTitle" destination="wZK-Ez-zfM" id="nAI-HF-3qf"/>
+                                            <outlet property="streamImageView" destination="QSd-7d-hKc" id="TnI-1r-xWD"/>
+                                            <outlet property="streamViewers" destination="7pW-Kf-rqB" id="RoH-yr-zM3"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="v1O-ce-YBt" secondAttribute="trailing" id="USz-to-mkL"/>
+                            <constraint firstItem="vKo-5z-Gpi" firstAttribute="top" secondItem="v1O-ce-YBt" secondAttribute="bottom" id="Wnk-VS-iTI"/>
+                            <constraint firstItem="v1O-ce-YBt" firstAttribute="leading" secondItem="Cbv-Fk-2is" secondAttribute="leading" id="fcZ-lQ-S5L"/>
+                            <constraint firstItem="v1O-ce-YBt" firstAttribute="top" secondItem="uW0-bs-cgW" secondAttribute="bottom" id="vsx-b3-tC2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="streamsTableView" destination="v1O-ce-YBt" id="Ang-Cs-bGI"/>
+                        <segue destination="KzQ-xK-3t6" kind="show" identifier="channelShowVC" id="J6O-Gk-LZs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SzV-wW-J9M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1821.5999999999999" y="138.98050974512745"/>
+        </scene>
+        <!--Channel View Controller-->
+        <scene sceneID="N6n-gx-f7m">
+            <objects>
+                <viewController id="KzQ-xK-3t6" customClass="ChannelViewController" customModule="TwitchApi" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1Ns-PH-EU1"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ctn-BN-XoL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OOG-8Y-i76">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EcW-16-EDe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2620" y="139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ucl-VJ-QLu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GKN-Zg-Lgf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="xSq-cG-MV9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ghQ-fZ-m3o"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N1U-Xr-j0y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="330" y="139"/>
         </scene>
     </scenes>
 </document>

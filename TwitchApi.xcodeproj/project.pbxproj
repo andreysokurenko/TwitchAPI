@@ -7,21 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84041D2921318AEC00DF6F1D /* ChannelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84041D2821318AEC00DF6F1D /* ChannelViewController.swift */; };
+		843494BD2130C973007DE088 /* StreamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843494BC2130C973007DE088 /* StreamsViewController.swift */; };
+		843494BF2130CC45007DE088 /* StreamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843494BE2130CC45007DE088 /* StreamCell.swift */; };
+		843494C12130CF3F007DE088 /* StreamDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843494C02130CF3F007DE088 /* StreamDataService.swift */; };
+		843494C32130DEDD007DE088 /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843494C22130DEDD007DE088 /* Stream.swift */; };
 		84F170B0212F4F2400B3C375 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F170AF212F4F2400B3C375 /* AppDelegate.swift */; };
-		84F170B2212F4F2400B3C375 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F170B1212F4F2400B3C375 /* ViewController.swift */; };
 		84F170B5212F4F2400B3C375 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F170B3212F4F2400B3C375 /* Main.storyboard */; };
 		84F170B7212F4F2400B3C375 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84F170B6212F4F2400B3C375 /* Assets.xcassets */; };
 		84F170BA212F4F2400B3C375 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F170B8212F4F2400B3C375 /* LaunchScreen.storyboard */; };
+		84F170C2212F52A800B3C375 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 84F170C1212F52A800B3C375 /* Podfile */; };
+		84F170C4212F53E700B3C375 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F170C3212F53E700B3C375 /* Alamofire.framework */; };
+		84F170C6212F542D00B3C375 /* GamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F170C5212F542D00B3C375 /* GamesViewController.swift */; };
+		84F170C8212F548800B3C375 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F170C7212F548800B3C375 /* Constants.swift */; };
+		84F170CA212F5D5100B3C375 /* GameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F170C9212F5D5100B3C375 /* GameCell.swift */; };
+		84F170D0212F6CB600B3C375 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F170CF212F6CB600B3C375 /* Game.swift */; };
+		84F170D3212F73F100B3C375 /* GameDataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F170D2212F73F100B3C375 /* GameDataServices.swift */; };
+		BFD421CAD5C26C07DE1F7A16 /* Pods_TwitchApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99704E35A529694463672A88 /* Pods_TwitchApi.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7938804BC4B3A13464D099F8 /* Pods-TwitchApi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitchApi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwitchApi/Pods-TwitchApi.debug.xcconfig"; sourceTree = "<group>"; };
+		82614E748EF3AC727AF67FEE /* Pods-TwitchApi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitchApi.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwitchApi/Pods-TwitchApi.release.xcconfig"; sourceTree = "<group>"; };
+		84041D2821318AEC00DF6F1D /* ChannelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelViewController.swift; sourceTree = "<group>"; };
+		843494BC2130C973007DE088 /* StreamsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamsViewController.swift; sourceTree = "<group>"; };
+		843494BE2130CC45007DE088 /* StreamCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamCell.swift; sourceTree = "<group>"; };
+		843494C02130CF3F007DE088 /* StreamDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamDataService.swift; sourceTree = "<group>"; };
+		843494C22130DEDD007DE088 /* Stream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stream.swift; sourceTree = "<group>"; };
 		84F170AC212F4F2400B3C375 /* TwitchApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitchApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F170AF212F4F2400B3C375 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		84F170B1212F4F2400B3C375 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		84F170B4212F4F2400B3C375 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84F170B6212F4F2400B3C375 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84F170B9212F4F2400B3C375 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84F170BB212F4F2400B3C375 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84F170C1212F52A800B3C375 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		84F170C3212F53E700B3C375 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../Library/Developer/Xcode/DerivedData/TwitchApi-fxuwvawjcbfhuydbhdjtifasugsz/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		84F170C5212F542D00B3C375 /* GamesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesViewController.swift; sourceTree = "<group>"; };
+		84F170C7212F548800B3C375 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		84F170C9212F5D5100B3C375 /* GameCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameCell.swift; sourceTree = "<group>"; };
+		84F170CF212F6CB600B3C375 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		84F170D2212F73F100B3C375 /* GameDataServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameDataServices.swift; sourceTree = "<group>"; };
+		99704E35A529694463672A88 /* Pods_TwitchApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwitchApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84F170C4212F53E700B3C375 /* Alamofire.framework in Frameworks */,
+				BFD421CAD5C26C07DE1F7A16 /* Pods_TwitchApi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,8 +66,11 @@
 		84F170A3212F4F2400B3C375 = {
 			isa = PBXGroup;
 			children = (
+				84F170C1212F52A800B3C375 /* Podfile */,
 				84F170AE212F4F2400B3C375 /* TwitchApi */,
 				84F170AD212F4F2400B3C375 /* Products */,
+				C6D6E458C6EBA885DE1F22A9 /* Pods */,
+				D757BFBE30BFC24E347DFCDC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +86,80 @@
 			isa = PBXGroup;
 			children = (
 				84F170AF212F4F2400B3C375 /* AppDelegate.swift */,
-				84F170B1212F4F2400B3C375 /* ViewController.swift */,
+				84F170D1212F73AE00B3C375 /* Services */,
+				84F170CD212F6C5100B3C375 /* Models */,
+				84F170CB212F6BFA00B3C375 /* Controllers */,
+				84F170CC212F6C3900B3C375 /* View */,
+			);
+			path = TwitchApi;
+			sourceTree = "<group>";
+		};
+		84F170CB212F6BFA00B3C375 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				84F170C5212F542D00B3C375 /* GamesViewController.swift */,
+				843494BC2130C973007DE088 /* StreamsViewController.swift */,
+				84041D2821318AEC00DF6F1D /* ChannelViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		84F170CC212F6C3900B3C375 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84F170CE212F6C7000B3C375 /* Utilities */,
+				84F170C9212F5D5100B3C375 /* GameCell.swift */,
+				843494BE2130CC45007DE088 /* StreamCell.swift */,
 				84F170B3212F4F2400B3C375 /* Main.storyboard */,
 				84F170B6212F4F2400B3C375 /* Assets.xcassets */,
 				84F170B8212F4F2400B3C375 /* LaunchScreen.storyboard */,
 				84F170BB212F4F2400B3C375 /* Info.plist */,
 			);
-			path = TwitchApi;
+			name = View;
+			sourceTree = "<group>";
+		};
+		84F170CD212F6C5100B3C375 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				84F170CF212F6CB600B3C375 /* Game.swift */,
+				843494C22130DEDD007DE088 /* Stream.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		84F170CE212F6C7000B3C375 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				84F170C7212F548800B3C375 /* Constants.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		84F170D1212F73AE00B3C375 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				84F170D2212F73F100B3C375 /* GameDataServices.swift */,
+				843494C02130CF3F007DE088 /* StreamDataService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		C6D6E458C6EBA885DE1F22A9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7938804BC4B3A13464D099F8 /* Pods-TwitchApi.debug.xcconfig */,
+				82614E748EF3AC727AF67FEE /* Pods-TwitchApi.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D757BFBE30BFC24E347DFCDC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84F170C3212F53E700B3C375 /* Alamofire.framework */,
+				99704E35A529694463672A88 /* Pods_TwitchApi.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +169,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84F170BE212F4F2400B3C375 /* Build configuration list for PBXNativeTarget "TwitchApi" */;
 			buildPhases = (
+				F0E7D9A2154373EF51CCFE28 /* [CP] Check Pods Manifest.lock */,
 				84F170A8212F4F2400B3C375 /* Sources */,
 				84F170A9212F4F2400B3C375 /* Frameworks */,
 				84F170AA212F4F2400B3C375 /* Resources */,
+				4B0C2049AD802014DED200B6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,19 +225,68 @@
 			files = (
 				84F170BA212F4F2400B3C375 /* LaunchScreen.storyboard in Resources */,
 				84F170B7212F4F2400B3C375 /* Assets.xcassets in Resources */,
+				84F170C2212F52A800B3C375 /* Podfile in Resources */,
 				84F170B5212F4F2400B3C375 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4B0C2049AD802014DED200B6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TwitchApi/Pods-TwitchApi-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TwitchApi/Pods-TwitchApi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0E7D9A2154373EF51CCFE28 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TwitchApi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		84F170A8212F4F2400B3C375 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84F170B2212F4F2400B3C375 /* ViewController.swift in Sources */,
+				843494BD2130C973007DE088 /* StreamsViewController.swift in Sources */,
+				84F170C6212F542D00B3C375 /* GamesViewController.swift in Sources */,
+				84F170D0212F6CB600B3C375 /* Game.swift in Sources */,
 				84F170B0212F4F2400B3C375 /* AppDelegate.swift in Sources */,
+				84F170D3212F73F100B3C375 /* GameDataServices.swift in Sources */,
+				84F170C8212F548800B3C375 /* Constants.swift in Sources */,
+				84F170CA212F5D5100B3C375 /* GameCell.swift in Sources */,
+				84041D2921318AEC00DF6F1D /* ChannelViewController.swift in Sources */,
+				843494C12130CF3F007DE088 /* StreamDataService.swift in Sources */,
+				843494BF2130CC45007DE088 /* StreamCell.swift in Sources */,
+				843494C32130DEDD007DE088 /* Stream.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +405,7 @@
 		};
 		84F170BF212F4F2400B3C375 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7938804BC4B3A13464D099F8 /* Pods-TwitchApi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TwitchApi/Info.plist;
@@ -268,6 +418,7 @@
 		};
 		84F170C0212F4F2400B3C375 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82614E748EF3AC727AF67FEE /* Pods-TwitchApi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TwitchApi/Info.plist;
@@ -297,6 +448,7 @@
 				84F170C0212F4F2400B3C375 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
